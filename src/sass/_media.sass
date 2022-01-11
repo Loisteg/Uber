@@ -19,7 +19,16 @@
                 display: flex
                 justify-content: center
                 align-items: flex-start
-
+@media (max-width: 1160px)
+    .footer
+        .md_unvisible
+            display: none
+        .md_visible
+            display: flex
+            flex-direction: column
+            align-items: flex-end
+            img
+                margin-bottom: 3px     
 @media (max-width: 991px)
     .menu
         &_item
@@ -57,7 +66,9 @@
             &_subtitle
                 display: flex
                 justify-content: center
-
+    .footer
+        &_wrapper > div 
+            width: 46%
 @media (max-width: 767px)
     .menu
         position: fixed
@@ -124,6 +135,66 @@
     .promo
         &_header
             line-height: 40px
+    .auto
+        &_up
+            img
+                top: 307px
+                left: 50%
+                translateX(-50%)
+                width: 500px
+                height: 400px
+@media (max-width: 741px)
+    .footer
+        &_wrapper
+            flex-direction: column
+        &_wrapper > div
+            width: 100%
+            &:nth-child(1)
+                order: 2
+                display: flex
+                justify-content: center
+                align-items: center
+            &:nth-child(2)
+                order: 1
+            &:nth-child(3)
+                order: 3
+                justify-content: center
+                align-items: center
+        .md_visible
+            display: none
+        .md_unvisible
+            display: flex
+        &_divider
+            width: 255px
+        &_links
+            width: 290px
+            &_main
+                a
+                    font-size: 14px
+            &_sub
+                flex-wrap: wrap
+                justify-content: space-around
+                a
+                    margin: 3px 0
+                    font-size: 14px
+            &_lang
+                margin-top: 1px
+                a
+                    font-size: 13px
+        &_social
+            margin-top: 18px
+            margin-bottom: 19px
+            &_item
+                height: 32px
+                width: 32px
+        &_mobile
+            a
+                justify-content: center
+                &:first-child
+                    margin-left: 6px
+                img
+                    height: 24px
+                    width: 83px
 @media (max-width: 575px)
     nav
         height: 30px
@@ -160,6 +231,17 @@
             height: 50px
     .menu
         width: 85%
+    .mobile
+        padding: 25px 0 23px 0
+        .title
+            margin-top: 14px
+            margin-bottom: 12px
+            font-size: 18px
+        .subtitle
+            margin-top: 0px
+            font-size: 16px
+        &_item
+            width: 294px
     .causes
         padding: 22px 0 36px 0
         .title
@@ -174,5 +256,64 @@
             font-size: 16px
         &_descr
             font-size: 15px
-
+    .auto
+        min-height: 392px
+        &_up
+            padding: 24px 0 31px 0
+            .title
+                display: none
+            .subtitle
+                display: none
+            img
+                top: 91px
+                left: 273px
+                width: 519px
+                height: 342px
+            .xs_auto_down_text_visible
+                display: block
+                margin: 0 auto
+                margin-top: 377px
+                font-weight: 300
+                font-size: 25px
+                line-height: 24px
+                text-align: center
+                color: #FFFFFF
+        &_down
+            display: none
+    .require
+        padding: 22px 0 20px 0
+        &_block
+            margin: 24px 0
+        &_list
+            margin-top: 0
+            padding-left: 30px
+            li
+                font-weight: 300
+                font-size: 16px
+                margin: 0
+    .world
+        min-height: 360px
+        padding: 24px 0 29px 0
+        .title
+            margin-top: 16px
+            font-size: 18px
+        .subtitle
+            font-size: 16px
+        &_link
+            top: 300px
+            font-size: 17px
+            width: 222px
+            left: 50%
+            transform: translateX(-50%)
+@media (max-width: 511px)
+    .auto
+        &_up
+            img
+                top: 95px
+                left: 50%
+                translateX(-50%)
+                width: 311px
+                height: 239px
+            .xs_auto_down_text_visible
+                margin-top: 304px
         

@@ -21,7 +21,10 @@ nav
 		color: #FFFFFF
 		text-decoration: none
 	&_item
+		padding-right: 50px
 		border-right: 2px dotted black
+		&:last-child
+			border: none
 
 .hamburger
 		display: none
@@ -281,6 +284,8 @@ nav
 						height: 480px
 						left: 50%
 						transform: translateX(-50%)
+				.xs_auto_down_text_visible
+					display: none
 		&_down
 				min-height: 397px 
 				background: url(../img/bg/mobile.png)
@@ -386,9 +391,11 @@ footer
 		padding-top: 32px
 	&_wrapper > div
 		width: 33%
-		&:nth-child(3)
-			display: flex 
-			justify-content: flex-end
+	&_mobile
+		display: flex 
+		justify-content: flex-end
+	.md_visible
+		display: none			
 	&_social
 		width: 160px
 		display: flex
